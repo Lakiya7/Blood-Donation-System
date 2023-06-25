@@ -1,0 +1,220 @@
+
+
+/*BODY SECTION BEGIN*/
+.marquee-1{
+    font-weight: bold;
+    color: #790808;
+}
+
+
+.b{
+    padding: 100px;
+    background-image: url(../images/Bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: relative;
+    overflow: hidden;
+}
+
+.b h1{
+    text-align: center;
+	font-size:50px;
+	font-weight:900;
+	letter-spacing:2px;
+	position:relative;
+	bottom:100px;
+    padding: 10px;
+	
+	background: -webkit-linear-gradient( #808080, #ff0000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.donate{
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 100px;
+    padding: 10px;
+
+    background: -webkit-linear-gradient( #000000, #ff0000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.age h2{
+    text-align: left;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 40px;
+    bottom: 100px;
+    padding: 10px;
+    padding-left: 120px;
+
+    background: -webkit-linear-gradient( #000000, #ff0000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.age h3{
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 33px;
+    bottom: 160px;
+    padding: 10px;
+    padding-left: 350px;
+
+    background: -webkit-linear-gradient( #000000, #ff0000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.age h4{
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 28px;
+    bottom: 160px;
+    padding: 10px;
+    padding-left: 40px;
+
+    background: -webkit-linear-gradient( #000000, #ff0000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.time h2{
+    text-align: left;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 40px;
+    padding: 10px;
+    bottom: 125px;
+    padding-left: 50px;
+    padding-bottom: 70px;
+
+    
+    background: #808080;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.learn-more{
+     text-align: left;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 30px;
+    padding: 10px;
+    bottom: 145px;
+    padding-left: 50px;
+    padding-bottom: 70px;
+    color: #000000;
+    
+}
+
+.learn-more{
+    border-style:solid;
+    color: #fcf9f9;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-right: 160px;
+    margin: 10px;
+    height: 150px;
+    width: 100%;
+    text-align: left;
+    line-height: 1.8;
+    background: #a52323;
+    
+}
+
+.learn-more .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #131212;
+    background-color: #f09090;
+    font-size: 16px;
+}
+
+ 
+
+.learn-more .btn:hover{
+    background-color: #000000;
+    border-color: #000000;
+}
+
+
+.allowed-persons .advice{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.allowed-persons {
+    display: flex;
+    flex-direction: row;
+}
+
+.allowed-persons .advice{
+    border-style:solid;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 200px;
+    margin: 10px;
+    height: 310px;
+    width: 50%;
+    text-align: left;
+    background: -webkit-linear-gradient(#0000FF, #0096FF);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.allowed-persons .advice .people{
+    border-style:solid;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-right: 200px;
+    margin: 10px;
+    height: 270px;
+    width: 50%;
+    text-align: left;
+    line-height: 1.8;
+    background: -webkit-linear-gradient(#0000FF, #0096FF);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.allowed-persons .advice .people h3{
+    font-size: 20px;
+}
+
+
+.allowed-persons .not-allowed{
+    border-style:solid;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-right: 200px;
+    margin: 10px;
+    height: 310px;
+    width: 50%;
+    text-align: left;
+    line-height: 1.8;
+    background: -webkit-linear-gradient(#0000FF, #0096FF);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.bl{
+     padding-top: -100px;
+     padding-bottom: -400px;
+	position:relative;
+	top: 10px;
+    width: 500px;
+    height: 150px;
+}
+
+
+

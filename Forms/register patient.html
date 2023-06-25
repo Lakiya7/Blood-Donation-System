@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <meta name = "author" content="IT1100_IWT- MLB_WE_01.01_06">
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0" >
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "styles/header.css" rel = "stylesheet" type ="text/css" >
+        <link href = "styles/register_patient_style.css" rel = "stylesheet" type ="text/css" >
+    </head>
+
+    <body>
+        
+    <!-- Header section -->
+        <div class = "header">
+		<div class ="head-1">Donate Your Blood with Us</div>
+            <div class = "logo-nav">
+                <img src = "images/logo.png" class = "logo">
+
+                <div class = "signin">
+                    <button type="submit" class="signupbtn" onclick="window.location.href='login_form.php'">SIGN IN</button>
+                    <span class = "or-text">OR</span>
+                    <button type="submit" class="register" onclick="window.location.href='register_form.php'">REGISTER NOW</button>
+                </div>
+
+            </div>
+
+            <!-- menu bar -->
+            <nav>
+                <!-- <div class = "nav01">
+                        <div class = "wrap">
+                            <div class ="navbar">
+                                <ul>
+                                    <li><a href = "#" class = "a_parent">
+                                        <div class ="wrap01">
+                                        <span class ="text">Home</span>
+                                    </div>
+                                </a></li>
+                            
+
+                             
+                                
+                                    <li><a href = "#" class = "a_parent">
+                                        <div class ="wrap01">
+                                        <span class ="text">Info</span>
+                        </div>
+                                    </a></li>
+                                
+
+                              
+                               
+                                    <li><a href = "#" class = "a_parent">
+                                        <div class ="wrap01">
+                                        <span class ="text">Services</span>
+                        </div>
+                                    </a></li>
+                                
+
+                               
+                                    <li><a href = "#" class = "a_parent">
+                                        <div class ="wrap01">
+                                        <span class ="text">History</span>
+                        </div>
+                                    </a></li>
+                                
+
+                             
+                                    <li><a href = "#" class = "a_parent">
+                                        <div class ="wrap01">
+                                        <span class ="text">About Us</span>
+                        </div>
+                                    </a></li>
+                                </ul>
+
+                                
+                               
+
+                                <ui class = "nav-links" >
+                                    <li> <a href = "" >Home </a></li>
+                                    <li> <a href = "" >Info </a></li>
+                                    <li> <a href = "" >Services </a></li>
+                                    <li> <a href = "" >History </a></li>
+                                    <li> <a href = "" >About Us </a></li>
+                            
+                                </ui> 
+
+                            </div>
+                        </div> 
+                        
+                    </div> -->
+                <div class = "nav1">
+                    <div class ="menu-bar" >
+                         <ul>
+
+                         <!--Menu bar 01-->
+                         <li><a href = "../home.php"><i class = "fa fa-fw fa-home"></i>Home</a></li>
+                         <li><a href = "#"><i class = "fa fa-fw fa-info"></i>Info</a>
+                            <!--Sub Menu bar 01-->
+                            <div class = "sub-menu-1" >
+                                    <ul>
+                                        <li><a href = "#">Terms & conditions</a></li>
+                                        <li><a href = "#">Privacy policy</a></li>
+                                        <li><a href = "#">accessibility statement</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        <!--Menu bar 02-->
+                         <li><a href = "#"><i class = "fa fa-fw fa-clone"></i>Services</a>
+                         <!--Sub Menu bar 02-->
+                            <div class = "sub-menu-1" >
+                                    <ul>
+                                        <li><a href = "#">Lab services</a></li>
+                                        <li><a href = "#">Training</a></li>
+                                        <li><a href = "#">Guidence</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <!--Menu bar 03-->
+                        <li><a href = "#"><i class = "fa fa-fw fa-history"></i>History</a></li>
+
+                        <!--Menu bar 04-->
+                        <li><a href = "#"><i class = "fa fa-fw fa-phone"></i>About Us</a>
+                    
+                        <!--Sub Menu bar 04-->
+                        <div class = "sub-menu-1" >
+                                    <ul>
+                                        <li><a href = "#">Vission</a></li>
+                                        <li><a href = "#">Mission</a></li>
+                                        <li><a href = "#">Campaign</a></li>
+                                    </ul>
+                                </div></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+                <!-- Search Button -->
+                <div class="search-container">
+                    <form action="#"><!-- need to add search php files -->
+                    <button type="submit"><i class="fa fa-fw fa-search"></i></button>
+                    <input type="text" placeholder="Search.." name="search">
+                    
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+    <!--blood reservation form-->
+
+
+    <!-- Body section -->
+    <div class="b"  >
+        <div class ="rp"  >
+        
+    
+
+        <h1>Blood Reservation Form</h1>
+        <form name="guider" method="post" action="REGISTER PATIENT.php" >
+
+        <b>Full name(According to the NIC)</b><input type="text" name="Full_Name"/></br></br>
+    <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup">
+<legend><b>Gender</b> </legend>
+    <input type="radio"  id="Male" name="gender" value="choice1" checked="checked" />
+    <label for="Male">Male</label>
+    <input type="radio"  id="Female" name="gender" value="choice2"  />
+    <label for="Female">Female</label></fieldset>
+            </br><b>Age</b><input type="text" name="age" /></br>
+        </br><b>Birthday</b><input type="text" name="birthday" /></br>
+    </br> <b>NIC</b><input type="text" name="nic"/></br>
+    </br> <b>Address</b><textarea rows="2" cols="50" name="address"></textarea></br>
+    </br> <b> Email</b><input type="text" name="email" /></br>
+    </br><b> Mobile number</b><input type="text" name="phone" /></br>
+    </br><b>Blood Type </b> </label>   
+    <select name="bloodType">  
+        <option value="Blood Type">Blood Type</option>  
+        <option value="A+">A+</option>  
+        <option value="A-">A-</option>  
+        <option value="B+">B+</option>  
+        <option value="B-">B-</option>  
+        <option value="O+">O+</option>  
+        <option value="O-">O-</option>  
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+    </select>
+</br></br>
+        <hr></br> 
+         <fieldset data-role="controlgroup">
+    <b><h3>Details of the guardian</h3></b></br>
+    </br><b>Full name</b><input type="text" name="GfullName" /></br>
+    </br><b> NIC</b><input type="text" name="Gnic"/></br>
+    </br><b>Address</b><input type="text" name="Gaddress"/></br>
+    </br><b>Email</b><input type="text" name="Gemail"/></br>
+    </br><b>Mobile number</b><input type="text" name="Gphone"/></br></fieldset>
+    <input type="submit" onclick="myFunction()"></input>
+
+    <script>
+    function myFunction() {
+      alert("You have successfully registered!");}
+    </script>   
+</form>
+    
+    </div>
+        </div>
+
+    <!-- Footer section -->
+    <div class = "footer" >
+        <div class = "footer-content" >
+            
+            <!-- section 01 - About section -->
+            <div class="footer-section about">
+
+                <h2 class = "aboutus-text" > About Us </h2>
+                <br>
+                <p>We take blood and divide it into its many comonents 
+                    so that the may be used most effecientle based on the 
+                    patients needs.Red blood cells transport exygen platlets 
+                    aid in bloodclotting and plasma contains particular proteins 
+                    that aid in coagulation and healing.
+                </p>
+
+                <br>
+                    <ul>
+                        <li><a href = "" >Vision</a></li>
+                        <li><a href = "" >Mission</a></li>
+                        <li><a href = "" >Campaign</a></li>
+                    </ul>
+
+            </div>
+
+            <!-- section 02 - About section -->
+            <div class="footer-section services">
+                <h2 class = "services-text" > Services </h2>
+                <br>
+                    <ul>
+                        <li><a href = "" >Lab services</a></li>
+                        <li><a href = "" >Training</a></li>
+                        <li><a href = "" >Guidence</a></li>
+                    </ul>
+
+                    <br>
+                    <div class = "services-2">
+                        <ul>
+                            <li><a href = "" >Terms & Conditions</a></li>
+                            <li><a href = "" >Privacy policy</a></li>
+                            <li><a href = "" >Accessibility statement</a></li>
+                        </ul>
+                    </div>
+            </div>
+
+
+
+            <!-- section 03 - About section -->
+            <div class="footer-section terms">
+                <h4 class = "inq-text" > Any Inquiry?</h4>
+                <form action = "#" method = "POST" >
+                    
+                <input type = "email" name = "email" class = "contact-input-1" placeholder = "Your email address..">
+                <textarea name = "msg" class = "contact-input-2" placeholder = "Your message.." ></textarea>
+                
+                <button type = "submit" class = "btn-big">
+                    <i class = "fa fa-fw fa-envelope"></i>
+                    Send</button>
+                </form>
+            </div>
+            <!-- section 04 - About section -->
+
+            <div class="footer-section contact">
+            <h2 class = "contact-text" > Contact Us </h2><br>
+                <div class = "contact">
+                    <span><i class = "fa fa-fw fa-phone"></i> &nbsp; +94 332296633 | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+94 774651238 |</span>
+                    <br>
+                    <span><i class = "fa fa-fw fa-envelope"></i> &nbsp; info@blooddonation.com</span>
+                    <br>
+                </div>
+
+                <div class = "social">
+                    <a href = "https://www.facebook.com/"><i class="fa fa-facebook"></i> </a>
+                    <a href = "https://twitter.com/?lang=en"><i class="fa fw fa-twitter"></i> </a>
+                    <a href = "https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i> </a>
+                    <a href = "https://www.youtube.com/"><i class="fa fa-youtube"></i> </a>
+
+                </div>
+            </div>
+        </div>
+      
+        <div class = "footer-btm" >
+            &copy; Copyright @ 2022 AIMA Blood Donation Center | All Right Reserved
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,598 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <meta name = "author" content="IT1100_IWT- MLB_WE_01.01_06">
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0" >
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "styles/header.css" rel = "stylesheet" type ="text/css" >
+        <link href = "styles/register_patient_style.css" rel = "stylesheet" type ="text/css" >
+    </head>
+
+    <body>
+        
+    <!-- Header section -->
+        <div class = "header">
+		<div class ="head-1">Donate Your Blood with Us</div>
+            <div class = "logo-nav">
+                <img src = "images/logo.png" class = "logo">
+
+                <div class = "signin">
+                    <button type="submit" class="signupbtn" onclick="window.location.href='login_form.php'">SIGN IN</button>
+                    <span class = "or-text">OR</span>
+                    <button type="submit" class="register" onclick="window.location.href='register_form.php'">REGISTER NOW</button>
+                </div>
+
+            </div>
+
+            <!-- menu bar -->
+            <nav>
+                <!-- <div class = "nav01">
+                        <div class = "wrap">
+                            <div class ="navbar">
+                                <ul>
+                                    <li><a href = "#" class = "a_parent">
+                                        <div class ="wrap01">
+                                        <span class ="text">Home</span>
+                                    </div>
+                                </a></li>
+                            
+
+                             
+                                
+                                    <li><a href = "#" class = "a_parent">
+                                        <div class ="wrap01">
+                                        <span class ="text">Info</span>
+                        </div>
+                                    </a></li>
+                                
+
+                              
+                               
+                                    <li><a href = "#" class = "a_parent">
+                                        <div class ="wrap01">
+                                        <span class ="text">Services</span>
+                        </div>
+                                    </a></li>
+                                
+
+                               
+                                    <li><a href = "#" class = "a_parent">
+                                        <div class ="wrap01">
+                                        <span class ="text">History</span>
+                        </div>
+                                    </a></li>
+                                
+
+                             
+                                    <li><a href = "#" class = "a_parent">
+                                        <div class ="wrap01">
+                                        <span class ="text">About Us</span>
+                        </div>
+                                    </a></li>
+                                </ul>
+
+                                
+                               
+
+                                <ui class = "nav-links" >
+                                    <li> <a href = "" >Home </a></li>
+                                    <li> <a href = "" >Info </a></li>
+                                    <li> <a href = "" >Services </a></li>
+                                    <li> <a href = "" >History </a></li>
+                                    <li> <a href = "" >About Us </a></li>
+                            
+                                </ui> 
+
+                            </div>
+                        </div> 
+                        
+                    </div> -->
+                <div class = "nav1">
+                    <div class ="menu-bar" >
+                         <ul>
+
+                         <!--Menu bar 01-->
+                         <li><a href = "../home.php"><i class = "fa fa-fw fa-home"></i>Home</a></li>
+                         <li><a href = "#"><i class = "fa fa-fw fa-info"></i>Info</a>
+                            <!--Sub Menu bar 01-->
+                            <div class = "sub-menu-1" >
+                                    <ul>
+                                        <li><a href = "#">Terms & conditions</a></li>
+                                        <li><a href = "#">Privacy policy</a></li>
+                                        <li><a href = "#">accessibility statement</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        <!--Menu bar 02-->
+                         <li><a href = "#"><i class = "fa fa-fw fa-clone"></i>Services</a>
+                         <!--Sub Menu bar 02-->
+                            <div class = "sub-menu-1" >
+                                    <ul>
+                                        <li><a href = "#">Lab services</a></li>
+                                        <li><a href = "#">Training</a></li>
+                                        <li><a href = "#">Guidence</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <!--Menu bar 03-->
+                        <li><a href = "#"><i class = "fa fa-fw fa-history"></i>History</a></li>
+
+                        <!--Menu bar 04-->
+                        <li><a href = "#"><i class = "fa fa-fw fa-phone"></i>About Us</a>
+                    
+                        <!--Sub Menu bar 04-->
+                        <div class = "sub-menu-1" >
+                                    <ul>
+                                        <li><a href = "#">Vission</a></li>
+                                        <li><a href = "#">Mission</a></li>
+                                        <li><a href = "#">Campaign</a></li>
+                                    </ul>
+                                </div></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+                <!-- Search Button -->
+                <div class="search-container">
+                    <form action="#"><!-- need to add search php files -->
+                    <button type="submit"><i class="fa fa-fw fa-search"></i></button>
+                    <input type="text" placeholder="Search.." name="search">
+                    
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+    <!--blood reservation form-->
+
+
+    <!-- Body section -->
+    <div class="b"  >
+        <div class ="rp"  >
+            <form name="donor" method="post" action="register donor.php">  
+                <h1>REGISTRATION FORM</h1>
+                
+                <label> Full Name : </label>         
+                <input type="text" name="Full_Name" size="15"/> <br> <br>  
+        
+                <label> Age : </label>     
+                <input type="text" name="age" size="15"/> <br> <br>
+        
+                <label> </label> 
+                <br> 
+                 <!--<form action="/action_page.php">-->
+                      <label for="Birthday">Birthday:</label>
+                      <input type="date" id="Birthday" name="birthday">
+                
+                
+                
+                <label> Address : </label>  
+                <br>  
+                <textarea cols="80" rows="5" name="address"> </textarea>  
+                <br> <br> 
+                 
+                <label>  Phone : </label>   
+                <input type="text" name="phone" size="10"/>
+                <br> <br>  
+        
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Gender :</legend>
+                            <input type="radio" name="gender" id="Male" value="choice1" checked="checked" />
+                            <label for="Male">Male</label>
+                            
+                            <input type="radio" name="gender" id="Female" value="choice2"  />
+                            <label for="Female">Female</label>
+                            
+                            <input type="radio" name="gender" id="Other" value="choice3"  />
+                            <label for="Other">Other</label>
+                    </fieldset>
+                </div> 
+                <br>  
+                <br>  
+                  
+                 <label> Email: </label> 
+                <input type="email" id="email" name="email"/>    
+                <br> <br>  
+        
+                <label> Blood Type : </label>   
+                <select name="bloodtype">  
+                    <option value="Blood Type">Blood Type</option>  
+                    <option value="A+">A+</option>  
+                    <option value="A-">A-</option>  
+                    <option value="B+">B+</option>  
+                    <option value="B-">B-</option>  
+                    <option value="O+">O+</option>  
+                    <option value="O-">O-</option>  
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>  
+                <br>  
+                <br>  
+        
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend> Have you ever donated blood before ?</legend>
+                            <input type="radio" name="have_u_ever_donated_blood" id="YES" value="choice1" checked="checked" />
+                            <label for="YES">YES</label>
+                            
+                            <input type="radio" name="have_u_ever_donated_blood" id="NO" value="choice2"  />
+                            <label for="NO">NO</label>
+                    </fieldset>
+                </div> 
+                <br>
+                <br>
+        
+                <label>  If "YES", how many time have you donated ? </label> 
+                <br> 
+                <select name="how_many_times">  
+                    <option value="No of Donations">No of Donations</option>  
+                    <option value=" Once"> Once</option>  
+                    <option value="Twice">Twice</option>  
+                    <option value="More than twice">More than twice</option>  
+                </select> 
+                <br>
+                <br> 
+                
+                <label> </label> 
+                <br> 
+                <!--<form action="/action_page.php">-->
+                      <label for="Last Time you donated blood">Last Time you donated blood :</label>
+                      <input type="date" id="Last Time you donated blood" name="last_date">
+                <!--</form>-->
+                
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend> Have you ever had any difficulties after donating the blood ?</legend>
+                            <input type="radio" name="have_u_ever_had_difficulties" id="YES" value="choice1" checked="checked" />
+                            <label for="YES">YES</label>
+                            
+                            <input type="radio" name="have_u_ever_had_difficulties" id="NO" value="choice2"  />
+                            <label for="NO">NO</label>
+                    </fieldset>
+                </div> 
+                
+                    <br>
+                    <br>
+                    
+                <label> If you had mention here : </label>         
+                <input type="text" name="difficulties_after_donation" size="15"/> <br> <br>
+                
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend> Have ever a doctor adviced you not to donate blood ?</legend>
+                            <input type="radio" name="doctor_advices" id="YES" value="choice1" checked="checked" />
+                            <label for="YES">YES</label>
+                            
+                            <input type="radio" name="doctor_advices" id="NO" value="choice2"  />
+                            <label for="NO">NO</label>
+                    </fieldset>
+                </div>
+                    <br>
+                    <br>
+                    
+                    <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend> Have ever being in below diseases ?</legend>
+                            <input type="radio" name="diseases" id="Heartattack" value="choice1" checked="checked" />
+                            <label for="Heartattack">Heartattack</label>
+                            
+                            <input type="radio" name="diseases" id="Fit" value="choice2"  />
+                            <label for="Fit">Fit</label>
+                            
+                            <input type="radio" name="diseases" id="Cancer" value="choice3"  />
+                            <label for="Cancer">Cancer</label>
+                            
+                            <input type="radio" name="diseases" id="Paralyze" value="choice4"  />
+                            <label for="Paralyze">Paralyze</label>
+                            
+                            <input type="radio" name="diseases" id="Diebetics" value="choice5"  />
+                            <label for="Diebetics">Diebetics</label>
+                            
+                            <input type="radio" name="diseases" id="Wheezing" value="choice6"  />
+                            <label for="Wheezing">Wheezing</label>
+                            
+                            <input type="radio" name="diseases" id="Kidney Failure" value="choice7"  />
+                            <label for="Kidney Failure">Kidney Failure</label>
+                    </fieldset>
+                </div>
+                    
+                    <br>
+                    <br>
+                    
+                    <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend> Are you currently getting any medications ?</legend>
+                            <input type="radio" name="medications" id="YES" value="choice1" checked="checked" />
+                            <label for="YES">YES</label>
+                            
+                            <input type="radio" name="medications" id="NO" value="choice2"  />
+                            <label for="NO">NO</label>
+                    </fieldset>
+                </div>
+                    <br>
+                    <br>
+                    
+                        <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend> Have you ever undergone a surgery ?</legend>
+                            <input type="radio" name="surgeries" id="YES" value="choice1" checked="checked" />
+                            <label for="YES">YES</label>
+                            
+                            <input type="radio" name="surgeries" id="NO" value="choice2"  />
+                            <label for="NO">NO</label>
+                    </fieldset>
+                </div>
+                    <br>
+                    <br>
+                    
+                        <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend> Are you currently pregnant or had an abortion or gave birth to a child during last 2 months ?</legend>
+                            <input type="radio" name="pregnant_abortion_gave_birth_to_a_child" id="YES" value="choice1" checked="checked" />
+                            <label for="YES">YES</label>
+                            
+                            <input type="radio" name="pregnant_abortion_gave_birth_to_a_child" id="NO" value="choice2"  />
+                            <label for="NO">NO</label>
+                    </fieldset>
+                </div>
+                    <br>
+                    <br>
+                    
+                    <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend> Have you ever had Hepatities ?</legend>
+                            <input type="radio" name="hepatities" id="YES" value="choice1" checked="checked" />
+                            <label for="YES">YES</label>
+                            
+                            <input type="radio" name="hepatities" id="NO" value="choice2"  />
+                            <label for="NO">NO</label>
+                    </fieldset>
+                </div>
+                    <br>
+                    <br>
+                    
+                    <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend> Did you suffer from typoid during last 2 years ?</legend>
+                            <input type="radio" name="typoid" id="YES" value="choice1" checked="checked" />
+                            <label for="YES">YES</label>
+                            
+                            <input type="radio" name="typoid" id="NO" value="choice2"  />
+                            <label for="NO">NO</label>
+                    </fieldset>
+                </div>
+                    <br>
+                    <br>
+                    
+                    <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend> <h3> During Last 12 Months </h3></legend>
+                            <label>(1) Have you got immunization or any other injections ? </label> 
+                    <br>
+                    <input type="radio" name="injections" value="yes" id="in1" checked="checked"/> <label for="YES">YES</label> 
+                    <input type="radio" name="injections" value="no" id="in2"/> <label for="NO">NO</label>  
+                    <br>
+                    <br>
+                    
+                    <label>(2) Did you get a new tatoo or new piercing </label> 
+                    <br>
+                    <input type="radio" name="new_piercings" value="yes" checked="checked"/> YES  
+                    <input type="radio" name="new_piercings"  value="no"/> NO  
+                    <br>
+                    <br>
+                    
+                    <label>(3) Have you being imprisoned ? </label> 
+                    <br>
+                    <input type="radio" name="imprisoned"value="yes" checked="checked"/> YES  
+                    <input type="radio" name="imprisoned"  value="no"/> NO  
+                    <br>
+                    <br>
+                    
+                    <label>(4) Have your partner gone abroad ? </label> 
+                    <br>
+                    <input type="radio" name="partner_gone_aboard" value="yes" checked="checked"/> YES  
+                    <input type="radio" name="partner_gone_aboard"  value="no"/> NO  
+                    <br>
+                    <br>
+                    
+                    <label>(5) Have you donated blood to your partner ? </label> 
+                    <br>
+                    <input type="radio" name="donated_blood_to_partner" value="yes" checked="checked"/> YES  
+                    <input type="radio" name="donated_blood_to_partner"  value="no"/> NO  
+                    <br>
+                    <br>
+                    
+                    <label>(6) Have you suffered from Malaria ? </label> 
+                    <br>
+                    <input type="radio" name="malaria" value="yes" checked="checked"/> YES  
+                    <input type="radio" name="malaria"  value="no"/> NO  
+                    <br>
+                    <br>
+                    
+                    <label>(7) Have you suffered from Dengue during last 6 months ? </label> 
+                    <br>
+                    <input type="radio" name="dengue" value="yes" checked="checked"/> YES  
+                    <input type="radio" name="dengue"  value="no"/> NO  
+                    <br>
+                    <br>
+                    
+                    <label>(8) Have you suffered from Chickenpox,Measles,Rubella,Diarrhea or any other long time fever ? </label> 
+                    <br>
+                    <input type="radio" name="chickenpox" value="yes" checked="checked"/> YES  
+                    <input type="radio" name="chickenpox"  value="no"/> NO  
+                    <br>
+                    <br>
+                    
+                    <label>(9) Have you had a tooth extraction during last week ? </label> 
+                    <br>
+                    <input type="radio" name="tooth_extraction" value="yes" checked="checked"/> YES  
+                    <input type="radio" name="tooth_extraction"  value="no"/> NO  
+                    <br>
+                    <br>
+                    
+                    <label>(10) Have you had any antibiotics or aspirin or any other medicine ? </label> 
+                    <br>
+                    <input type="radio" name="antibiotics" value="yes" checked="checked"/> YES  
+                    <input type="radio" name="antibiotics"  value="no"/> NO  
+                    <br>
+                    <br>
+                    
+                    <label>(11) Do you know that if you you belong to any of bellow groups, you are not qualified to donate blood ? </label> 
+                    <br>
+                    <input type="radio" name="others" value="yes" checked="checked"/> YES  
+                    <input type="radio" name="others"  value="no"/> NO  
+                    <br>
+                    <br>
+                    <ul>
+                        <li> if you are effected by aids or hepatitis </li>
+                        <li> if your sexual relationships are not limited to one person </li>
+                        <li> if you are a man who had a sexual relationship with another man </li>
+                        <li> if you ever injected drugs </li>
+                        <li> if you ever done prostitution </li>
+                        <li> if you had a relationship with a prostitute during last 12 months </li>
+                        <li> if you have any doughts about your partner being affected by aids </li>
+                    </ul>
+                    
+                    <label>(12)Does your partner belongs to any of the above categories ? </label> 
+                    <br>
+                    <input type="radio" name="partner_belongs_to_others" value="yes" checked="checked"/> YES  
+                    <input type="radio" name="partner_belongs_to_others"  value="no"/> NO  
+                    </fieldset>
+                </div>
+                    <br>
+                    <br>
+                
+                    <input type="submit" onclick="myFunction()"></input>
+
+                    <script>
+                    function myFunction() {
+                      alert("You have succesfully registered!");
+                    }
+                    </script>
+                </form>  
+                
+    
+
+              
+                
+                </div>
+    
+    </div>
+        </div>
+
+    <!-- Footer section -->
+    <div class = "footer" >
+        <div class = "footer-content" >
+            
+            <!-- section 01 - About section -->
+            <div class="footer-section about">
+
+                <h2 class = "aboutus-text" > About Us </h2>
+                <br>
+                <p>We take blood and divide it into its many comonents 
+                    so that the may be used most effecientle based on the 
+                    patients needs.Red blood cells transport exygen platlets 
+                    aid in bloodclotting and plasma contains particular proteins 
+                    that aid in coagulation and healing.
+                </p>
+
+                <br>
+                    <ul>
+                        <li><a href = "" >Vision</a></li>
+                        <li><a href = "" >Mission</a></li>
+                        <li><a href = "" >Campaign</a></li>
+                    </ul>
+
+            </div>
+
+            <!-- section 02 - About section -->
+            <div class="footer-section services">
+                <h2 class = "services-text" > Services </h2>
+                <br>
+                    <ul>
+                        <li><a href = "" >Lab services</a></li>
+                        <li><a href = "" >Training</a></li>
+                        <li><a href = "" >Guidence</a></li>
+                    </ul>
+
+                    <br>
+                    <div class = "services-2">
+                        <ul>
+                            <li><a href = "" >Terms & Conditions</a></li>
+                            <li><a href = "" >Privacy policy</a></li>
+                            <li><a href = "" >Accessibility statement</a></li>
+                        </ul>
+                    </div>
+            </div>
+
+
+
+            <!-- section 03 - About section -->
+            <div class="footer-section terms">
+                <h4 class = "inq-text" > Any Inquiry?</h4>
+                <form action = "#" method = "POST" >
+                    
+                <input type = "email" name = "email" class = "contact-input-1" placeholder = "Your email address..">
+                <textarea name = "msg" class = "contact-input-2" placeholder = "Your message.." ></textarea>
+                
+                <button type = "submit" class = "btn-big">
+                    <i class = "fa fa-fw fa-envelope"></i>
+                    Send</button>
+                </form>
+            </div>
+            <!-- section 04 - About section -->
+
+            <div class="footer-section contact">
+            <h2 class = "contact-text" > Contact Us </h2><br>
+                <div class = "contact">
+                    <span><i class = "fa fa-fw fa-phone"></i> &nbsp; +94 332296633 | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+94 774651238 |</span>
+                    <br>
+                    <span><i class = "fa fa-fw fa-envelope"></i> &nbsp; info@blooddonation.com</span>
+                    <br>
+                </div>
+
+                <div class = "social">
+                    <a href = "https://www.facebook.com/"><i class="fa fa-facebook"></i> </a>
+                    <a href = "https://twitter.com/?lang=en"><i class="fa fw fa-twitter"></i> </a>
+                    <a href = "https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i> </a>
+                    <a href = "https://www.youtube.com/"><i class="fa fa-youtube"></i> </a>
+
+                </div>
+            </div>
+        </div>
+      
+        <div class = "footer-btm" >
+            &copy; Copyright @ 2022 AIMA Blood Donation Center | All Right Reserved
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+    </body>
+</html>

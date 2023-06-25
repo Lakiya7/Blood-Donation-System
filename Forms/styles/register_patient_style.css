@@ -1,0 +1,132 @@
+/*Registration form*/
+
+@charset "charset";
+
+.rp form{
+	width: 100%;
+	padding: 20px 20px;
+	margin: 8px 0;
+
+
+}
+
+
+.rp label{
+	
+
+}
+
+.rp input{
+	border: 0.1px solid #f7444d;	
+	font-family: 'Times New Roman', Times, serif;
+	min-width: 100%;
+	width: 100%;
+	border-top-width: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size:medium;
+	padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+	
+}
+
+
+
+.rp fieldset{
+	border: 0.1px solid #f7444d;
+	font-family: 'Times New Roman', Times, serif;
+	min-width: 100%;
+	width: 100%;
+	border-top-width: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size:medium;
+	padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rp select{
+	border: 0.1px solid #f7444d;
+	font-family: 'Times New Roman', Times, serif;
+	min-width: 100%;
+	width: 100%;
+	border-top-width: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size:medium;
+	padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rp textarea{
+	border: 0.1px solid #f7444d;
+	font-family: 'Times New Roman', Times, serif;
+	min-width: 100%;
+	width: 100%;
+	border-top-width: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size:medium;
+	padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rp radio{
+	
+	display: inline-block;
+	
+}
+
+	body{
+    background:#fff;
+
+}
+
+.rp{
+    background-image: "images/Bg.jpg";
+	width:80%;
+	margin:50px auto;
+	background:#fff;
+	border-radius:2px;
+	padding:20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.rp h1{
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0px 0px 20px 0px;
+	color: #530202;
+	font-size:x-large;
+}
+
+.rp input[type = "submit"]{
+	background: #eb5960;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #5994FF;
+	border-radius: 3px;
+	color: #000000;
+}
+
+.rp  input[type="submit"]:hover {
+	background: #6B9FFF;
+	color:#fff;
+}
+
+.rp  {  
+ border-color: #f7444d;  
+  border-width: 5px;  
+  border-style: inset;   
+  }
+
+/*Registration form END*/

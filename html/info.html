@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/info.css">
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+
+    <!--Scroll up button java script link -->
+    <script src="../js/home.js"></script>
+
+    <title>Aima</title>
+</head>
+<body>
+    <body>
+
+        <!-- scroll Up btn -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class = "fa fa-fw fa-arrow-up"></i></button>
+
+            <script>
+                //Get the button
+                var mybutton = document.getElementById("myBtn");
+                
+                // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function() {scrollFunction()};
+
+                    function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+            </script>
+        
+        <!-- Header section -->
+            <div class = "header">
+            <div class ="head-1">Donate Your Blood with Us</div>
+                <div class = "logo-nav">
+                    <a href = "../home.php"><img src = "Images/logo.png" class = "logo"></a>
+    
+                    <div class = "signin">
+                        <button type="submit" class="signupbtn" onclick="window.location.href='../login_form.php'">SIGN IN</button>
+                        <span class = "or-text">OR</span>
+                        <button type="submit" class="register" onclick="window.location.href='../register_form.php'">REGISTER NOW</button>
+                    </div>
+                    
+    
+                </div>
+
+               
+              
+                <nav>
+                    <div class = "nav1">
+                        <div class ="menu-bar" >
+                             <ul>
+    
+                             <!--Menu bar 01-->
+                             <li><a href = "../home.php"><i class = "fa fa-fw fa-home"></i>Home</a></li>
+                             <li><a href = "info.html"><i class = "fa fa-fw fa-info"></i>Info</a>
+                               
+    
+                                
+                            <!--Menu bar 02-->
+                             <li><a href = "#"><i class = "fa fa-fw fa-clone"></i>Services</a>
+                             <!--Sub Menu bar 02-->
+                                <div class = "sub-menu-1" >
+                                        <ul>
+                                            <li><a href = "#">Lab services</a></li>
+                                            <li><a href = "#">Training</a></li>
+                                            <li><a href = "#">Guidence</a></li>
+                                        </ul>
+                                    </div>
+                            </li>
+                            <!--Menu bar 03-->
+                            <li><a href = "History.html"><i class = "fa fa-fw fa-history"></i>History</a></li>
+    
+                            <!--Menu bar 04-->
+                            <li><a href = "About Us.html"><i class = "fa fa-fw fa-phone"></i>About Us</a>
+                        
+                            <!--Sub Menu bar 04-->
+                            <div class = "sub-menu-1" >
+                                        <ul>
+                                            <li><a href = "About Us.html">Vission</a></li>
+                                            <li><a href = "About Us.html">Mission</a></li>
+                                            <li><a href = "About Us.html">Campaign</a></li>
+                                        </ul>
+                                    </div></li>
+    
+                            </ul>
+    
+                        </div>
+                    </div>
+                    
+    
+    
+    
+    
+                    <!-- Search Button -->
+                    <div class="search-container">
+                        <form action="#"><!-- need to add search php files -->
+                        <button type="submit"><i class="fa fa-fw fa-search"></i></button>
+                        <input type="text" placeholder="Search.." name="search">
+                        
+                        </form>
+                    </div>
+                </nav>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 5</div>
+                      <img src="Images/1.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="Images/2.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 5</div>
+                      <img src="Images/3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="Images/4.jpg" style="width:100%">
+                      </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="Images/5.jpg" style="width:100%">
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 5000); // Change image every 5 seconds
+                    }
+                    </script>
+               
+    
+            </div>
+    
+    
+        <!-- Body section -->
+            <div class ="b">
+                
+                <div class="get">GET TOUCH <b>WITH US</b></div><br><br><br>
+                <div class="cap1">Excuses never saves a life,<br>
+                    <div class="cap2"><b>Blood donation does</b></div>
+                </div>
+                <br><br><br><br><br><br><br>
+                
+               <!-- <div class="visit"><b>Visit Us</b> </div>
+                <div class="vlink"><a href="file:///C:/Users/Dinitha/Desktop/Header%20project%2004/index.html">file:///C:/Users/Dinitha/Desktop/Header%20project%2004/index.html </a>
+                </div>
+                <div class="call"><b>Call Us</b> </div>-->
+                <!--<div class="v"></div>-->
+
+                <div class="para">We have a well experienced staff with us who are dedicated to help people who are in<br> need just like you.</div>
+                
+            
+
+                    <div class="visit">Visit Us</div>
+                    <div class="vlink"><a href="file:///C:/Users/Dinitha/Desktop/Header%20project%2004/index.html">file:///C:/Users/Dinitha/Desktop/Header%20project%2004/index.html</a></div>
+                    <div class="call">Call us</div>
+                    <div class="nob"><div class="no">011 245 3907</div></div>
+                    <div class="email">Email</div>
+                    <div class="elink"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKjDPsWfShdtVKXqXrSlHrHzwmWjWTDfqJkFGfLHFQpBpDxjRxkKKhLKPTjvMCrklHxgvrM">aimacenter@gmail.com</a></div>
+                    <div class="fax">Fax</div>
+                    <div class="faxno"><div class="fno">011 581 9762</div></div>
+                    
+                    
+                    <div class="v"></div>
+
+                    <div class="v1"></div>
+                    <div class="v2"></div>
+            
+                    <div class="ap1"><img src="Images/a1.png"></div>
+                    <div class="ap2"><img src="Images/a2.png"></div>
+               
+                    <div class="awards"><u>AWARDS IN RECENT PAST</u></div>
+                    <div class="hos"><u>OUR HOSPITALS</u></div>
+                    
+                    <div class="infob"><u>INFO</u></div>
+
+                    <div class="card">
+                        <img src="Images/h2.jpg" alt="Avatar" style="width:100%">
+                        <div class="cont">
+                          <h4><b>Medihelp Hospital</b></h4> 
+                          <p>Galle <br> 013-234-6719</p> 
+                        </div>
+                      </div>
+
+                      <div class="card1">
+                        <img src="Images/h4.jpg" alt="Avatar" style="width:100%">
+                        <div class="cont"><br>
+                          <h4><b>Asiri Hospital</b></h4> 
+                          <p>Colombo <br> 011-451-0971</p> 
+                        </div>
+                      </div>
+
+                      <div class="card2">
+                        <img src="Images/h1.png" alt="Avatar" style="width:100%">
+                        <div class="cont">
+                          <h4><b>Lanka Hospital</b></h4> 
+                          <p>Kandy<br> 015-823-4107</p> 
+                        </div>
+                      </div>
+
+                      <div class="card3">
+                        <img src="Images/h5.jpg" alt="Avatar" style="width:100%">
+                        <div class="cont"><br><br>
+                          <h4><b>Sakura Hospital</b></h4> 
+                          <p>Anuradhapura<br> 016-4730-6981</p> 
+                        </div>
+                      </div>
+
+                      
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lmAxdq5J_jj8LKp0LSkLuNH7W7OaagA6&ehbc=2E312F" width="640" height="480"></iframe>
+
+                
+            </div>
+    
+        <!-- Footer section -->
+        <div class = "footer" >
+            <div class = "footer-content" >
+                
+                <!-- section 01 - About section -->
+                <div class="footer-section about">
+    
+                    <h2 class = "aboutus-text" > About Us </h2>
+                    <br>
+                    <p>We take blood and divide it into its many comonents 
+                        so that the may be used most effecientle based on the 
+                        patients needs.Red blood cells transport exygen platlets 
+                        aid in bloodclotting and plasma contains particular proteins 
+                        that aid in coagulation and healing.
+                    </p>
+    
+                    <br>
+                        <ul>
+                            <li><a href = "About Us.html" >Vision</a></li>
+                            <li><a href = "About Us.html" >Mission</a></li>
+                            <li><a href = "About Us.html" >Campaign</a></li>
+                        </ul>
+    
+                </div>
+    
+                <!-- section 02 - About section -->
+                <div class="footer-section services">
+                    <h2 class = "services-text" > Services </h2>
+                    <br>
+                        <ul>
+                            <li><a href = "" >Lab services</a></li>
+                            <li><a href = "" >Training</a></li>
+                            <li><a href = "" >Guidence</a></li>
+                        </ul>
+    
+                        <br>
+                        <div class = "services-2">
+                            <ul>
+                                <li><a href = "About Us.html" >Terms & Conditions</a></li>
+                                <li><a href = "About Us.html" >Privacy policy</a></li>
+                                <li><a href = "About Us.html" >Accessibility statement</a></li>
+                            </ul>
+                        </div>
+                </div>
+    
+    
+    
+                <!-- section 03 - About section -->
+                <div class="footer-section terms">
+                    <h4 class = "inq-text" > Any Inquiry?</h4>
+                    <form action = "#" method = "POST" >
+                        
+                    <input type = "email" name = "email" class = "contact-input-1" placeholder = "Your email address..">
+                    <textarea name = "msg" class = "contact-input-2" placeholder = "Your message.." ></textarea>
+                    
+                    <button type = "submit" class = "btn-big">
+                        <i class = "fa fa-fw fa-envelope"></i>
+                        Send</button>
+                    </form>
+                </div>
+                <!-- section 04 - About section -->
+    
+                <div class="footer-section contact">
+                <h2 class = "contact-text" > Contact Us </h2><br>
+                    <div class = "contact">
+                        <span><i class = "fa fa-fw fa-phone"></i> &nbsp; +94 332296633 | <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+94 774651238 |</span>
+                        <br>
+                        <span><i class = "fa fa-fw fa-envelope"></i> &nbsp; info@blooddonation.com</span>
+                        <br>
+                    </div>
+    
+                    <div class = "social">
+                        <a href = "https://www.facebook.com/"><i class="fa fa-facebook"></i> </a>
+                        <a href = "https://twitter.com/?lang=en"><i class="fa fw fa-twitter"></i> </a>
+                        <a href = "https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i> </a>
+                        <a href = "https://www.youtube.com/"><i class="fa fa-youtube"></i> </a>
+    
+                    </div>
+                </div>
+            </div>
+          
+            <div class = "footer-btm" >
+                &copy; Copyright @ 2022 AIMA Blood Donation Center | All Right Reserved
+            </div>
+    
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+        </body>
+    </html>
+</body>
+</html>
